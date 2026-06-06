@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import { ScrollReveal, SectionLabel, ProjectCard } from "./SharedUI";
 
 function Contact() {
   const [copied, setCopied] = useState(false);
@@ -72,3 +73,5 @@ function Contact() {
     </section>
   );
 }
+
+export default Contact;

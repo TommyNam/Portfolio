@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import { GlitchText, CursorBlink } from "./SharedUI";
 
 
 function Hero() {
@@ -143,3 +144,5 @@ function Hero() {
     </section>
   );
 }
+
+export default Hero;

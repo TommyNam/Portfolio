@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import { DISCIPLINES } from "../data";
+import { ScrollReveal, SectionLabel } from "./SharedUI";
 
 
 function About() {
@@ -98,3 +100,5 @@ function About() {
     </section>
   );
 }
+
+export default About;

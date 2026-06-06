@@ -223,3 +223,5 @@ function ProjectCard({ project, index }) {
     </ScrollReveal>
   );
 }
+
+export { GlitchText, CursorBlink, SectionLabel, ScrollReveal, StatBar, ProjectCard };

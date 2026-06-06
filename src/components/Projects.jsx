@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
-
+import { PROJECTS } from "../data";
+import { ScrollReveal, SectionLabel, ProjectCard } from "./SharedUI";
 
 function Projects() {
   return (
@@ -41,3 +42,5 @@ function Projects() {
     </section>
   );
 }
+
+export default Projects;

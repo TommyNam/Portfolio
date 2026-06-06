@@ -96,3 +96,5 @@ const DISCIPLINES = [
     stat: "Soulsborne Enjoyer",
   },
 ];
+
+export { NAV_ITEMS, SKILLS, PROJECTS, DISCIPLINES };

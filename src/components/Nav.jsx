@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import { NAV_ITEMS } from "../data";
 
 
 function Nav() {
@@ -98,3 +99,5 @@ function Nav() {
     </>
   );
 }
+
+export default Nav;

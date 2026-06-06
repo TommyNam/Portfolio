@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
-
+import { SKILLS } from "../data";
+import { ScrollReveal, SectionLabel, ProjectCard, StatBar } from "./SharedUI";
 
 function Skills() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -81,3 +82,5 @@ function Skills() {
     </section>
   );
 }
+
+export default Skills;
