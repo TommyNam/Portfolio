@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
 import { GlitchText, CursorBlink } from "./SharedUI";
+// import imageName from "../assets/my-image.png";
 
 
 function Hero() {
