@@ -9,7 +9,7 @@ function About() {
     <section id="about" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <SectionLabel label="THE_LORE" />
+          <SectionLabel label="MY STORY" />
           <h2 className="font-sans text-4xl md:text-5xl font-black text-white mt-4 mb-16">
             Character{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300">

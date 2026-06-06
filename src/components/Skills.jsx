@@ -15,7 +15,7 @@ function Skills() {
     <section id="skills" className="py-24 px-6 bg-slate-900/30">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <SectionLabel label="THE_GEAR" />
+          <SectionLabel label="SKILLS" />
           <h2 className="font-sans text-4xl md:text-5xl font-black text-white mt-4 mb-4">
             Skill{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-amber-400">

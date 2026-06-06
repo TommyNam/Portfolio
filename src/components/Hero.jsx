@@ -5,7 +5,7 @@ import { GlitchText, CursorBlink } from "./SharedUI";
 
 function Hero() {
   const [typed, setTyped] = useState("");
-  const fullText = "SOFTWARE ENGINEER";
+  const fullText = "STUDENT. PROBLEM SOLVER. DEVELOPER.";
   useEffect(() => {
     let i = 0;
     const timer = setInterval(() => {
@@ -53,7 +53,7 @@ function Hero() {
           className="mb-6"
         >
           <span className="font-mono text-sm text-cyan-400 tracking-[0.25em] border border-cyan-400/30 px-4 py-1.5 rounded bg-cyan-400/5">
-            PLAYER_ONE.exe — INITIALIZING
+            Dongerlord.exe — INITIALIZING
           </span>
         </motion.div>
 
@@ -82,8 +82,7 @@ function Hero() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="font-sans text-lg text-slate-400 max-w-xl mx-auto leading-relaxed mb-10"
         >
-          Building scalable full-stack systems, one commit at a time. MERN &
-          Django specialist. Problem solver. Always leveling up.
+          Software Engineering with a gamer's mindset: Strategic, Adaptive, and Always Leveling Up.
         </motion.p>
 
         <motion.div

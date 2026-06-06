@@ -45,7 +45,7 @@ function Nav() {
             onClick={() => scrollTo("hero")}
             className="font-mono text-sm font-bold text-cyan-400 tracking-widest hover:text-cyan-300 transition-colors"
           >
-            &gt; DEV.EXE
+            &gt; TOMMY-NAM NGUYEN
           </button>
 
           {/* Desktop nav */}

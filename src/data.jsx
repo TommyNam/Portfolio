@@ -1,11 +1,11 @@
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const NAV_ITEMS = [
-  { id: "hero", label: "HOME_BASE" },
-  { id: "about", label: "THE_LORE" },
-  { id: "skills", label: "THE_GEAR" },
+  { id: "hero", label: "HOME" },
+  { id: "about", label: "MY STORY" },
+  { id: "skills", label: "SKILLS" },
   { id: "projects", label: "QUEST_LOG" },
-  { id: "contact", label: "SEND_RAVEN" },
+  { id: "contact", label: "CONTACT" },
 ];
 
 const SKILLS = [
