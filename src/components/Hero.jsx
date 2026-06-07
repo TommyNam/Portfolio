@@ -1,8 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useAnimation,
+  AnimatePresence,
+} from "framer-motion";
 import { GlitchText, CursorBlink } from "./SharedUI";
-// import imageName from "../assets/my-image.png";
-
+import HeroImage1 from "../assets/HeroImage1.png";
 
 function Hero() {
   const [typed, setTyped] = useState("");
@@ -25,16 +29,17 @@ function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Grid background */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(#00ffff 1px, transparent 1px), linear-gradient(90deg, #00ffff 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
+      {/* Hero Image background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={HeroImage1}
+          alt="Hero Background"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-[#080b0f]/20" />
+      </div>
+      
       {/* Radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-500/5 blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-amber-500/4 blur-3xl pointer-events-none" />
@@ -54,7 +59,7 @@ function Hero() {
           className="mb-6"
         >
           <span className="font-mono text-sm text-cyan-400 tracking-[0.25em] border border-cyan-400/30 px-4 py-1.5 rounded bg-cyan-400/5">
-            Dongerlord.exe — INITIALIZING
+            PLAYER_ONE.exe — INITIALIZING
           </span>
         </motion.div>
 
@@ -83,7 +88,8 @@ function Hero() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="font-sans text-lg text-slate-400 max-w-xl mx-auto leading-relaxed mb-10"
         >
-          Software Engineering with a gamer's mindset: Strategic, Adaptive, and Always Leveling Up.
+          Software Engineering with a gamer's mindset: Strategic, Adaptive, and
+          Always Leveling Up.
         </motion.p>
 
         <motion.div
@@ -96,7 +102,9 @@ function Hero() {
             href="#projects"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="font-mono text-sm font-bold py-3 px-8 rounded border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 tracking-widest"
           >
@@ -106,11 +114,13 @@ function Hero() {
             href="#contact"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="font-mono text-sm font-bold py-3 px-8 rounded border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white transition-all duration-300 tracking-widest"
           >
-            SEND RAVEN
+            CONTACT
           </a>
         </motion.div>
 
@@ -121,14 +131,16 @@ function Hero() {
           transition={{ duration: 0.6, delay: 2.0 }}
           className="flex flex-wrap justify-center gap-3 mt-12"
         >
-          {["MERN Stack", "Django / Python", "Cloud Native", "Open Source"].map((tag) => (
-            <span
-              key={tag}
-              className="font-mono text-xs text-slate-500 border border-slate-700 px-3 py-1 rounded-full hover:text-slate-300 hover:border-slate-500 transition-colors duration-200"
-            >
-              {tag}
-            </span>
-          ))}
+          {["MERN Stack", "Django / Python", "Cloud Native", "Open Source"].map(
+            (tag) => (
+              <span
+                key={tag}
+                className="font-mono text-xs text-slate-500 border border-slate-700 px-3 py-1 rounded-full hover:text-slate-300 hover:border-slate-500 transition-colors duration-200"
+              >
+                {tag}
+              </span>
+            ),
+          )}
         </motion.div>
       </div>
 
@@ -138,7 +150,9 @@ function Hero() {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <span className="font-mono text-xs text-slate-600 tracking-widest">SCROLL</span>
+        <span className="font-mono text-xs text-slate-600 tracking-widest">
+          SCROLL
+        </span>
         <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent" />
       </motion.div>
     </section>

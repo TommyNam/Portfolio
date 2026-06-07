@@ -2,7 +2,7 @@
 
 const NAV_ITEMS = [
   { id: "hero", label: "HOME" },
-  { id: "about", label: "MY STORY" },
+  { id: "about", label: "PROFILE" },
   { id: "skills", label: "SKILLS" },
   { id: "projects", label: "QUEST_LOG" },
   { id: "contact", label: "CONTACT" },

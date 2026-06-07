@@ -23,10 +23,10 @@ export default function App() {
       <footer className="py-8 px-6 border-t border-slate-800/50">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           <span className="font-mono text-xs text-slate-600">
-            © {new Date().getFullYear()} // YOUR_NAME — Built with React & Framer Motion
+            © {new Date().getFullYear()} // TOMMY-NAM NGUYEN — Built with React & Framer Motion
           </span>
           <span className="font-mono text-xs text-slate-700">
-            UPTIME: {Math.floor(Math.random() * 9000 + 1000)}hrs // STATUS: ONLINE
+            UPTIME: Since 6/7/2026 // STATUS: ONLINE
           </span>
         </div>
       </footer>
